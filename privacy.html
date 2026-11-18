@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- Generated from TuneforWork/TuneforWork/Resources/PrivacyPolicy.md. Do not edit this copy. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Cue privacy policy: local music data, song matching, feedback and optional usage sharing.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Cue Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; --background: #fafcfb; --ink: #172b24; --link: #287a62; --muted: #51645c; }
+@media (prefers-color-scheme: dark) { :root { --background: #15221c; --ink: #edf4ef; --link: #67c8a5; --muted: #bccdc2; } }
+body { margin: 0; background: var(--background); color: var(--ink); font: 17px/1.65 system-ui, sans-serif; }
+main { max-width: 760px; margin: auto; padding: 40px 24px 64px; overflow-wrap: anywhere; }
+h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.2; }
+h2 { font-size: 23px; margin-top: 36px; line-height: 1.35; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
+li { margin: 10px 0; }
+p:first-of-type { color: var(--muted); }
+</style>
+</head>
+<body><main>
+<h1>Cue Privacy Policy</h1>
+<p>Last updated: 15 November 2026</p>
+<p>Cue helps you shape what plays next from your music library. This notice explains Cue&#39;s data practices. Xinchun Ma is responsible for Cue&#39;s processing of personal data. Contact: <a href="mailto:xinchunma226@gmail.com">xinchunma226@gmail.com</a>.</p>
+<h2>At a glance</h2>
+<ul>
+<li>Your preferences, imported library, queue and playback history are stored on your device, not automatically uploaded as a complete library or listening-history record.</li>
+<li>Importing music sends song information to our feature service. Choosing a song label, saving a fine-tuned score or submitting feedback can also send data, even when usage sharing is off.</li>
+<li>Usage sharing is optional and off by default. Random identifiers can connect events from the same installation; this is not fully anonymous data.</li>
+<li>We do not sell personal data, use advertising identifiers or combine your data with other companies&#39; data for targeted advertising.</li>
+</ul>
+<h2>1. Apple Music and information on your device</h2>
+<p>With your Apple Music permission, Cue reads music-library information such as playlists, songs, artwork and available metadata. It uses MusicKit to play music. Where available, recent-play information helps avoid repeating songs too soon. Apple handles your Apple account and subscription; Cue does not receive your Apple account password or payment details.</p>
+<p>Cue stores preferences, onboarding choices, imported tracks, include/exclude choices, the queue, recent playback, personal labels and feature caches in the app&#39;s local storage. The app does not upload your complete playlists, playlist names or complete listening history to our backend. Selected song metadata used for matching is described below. Apple device backups may include local app data, depending on your Apple settings; that is separate from our backend.</p>
+<h2>2. Song matching and shared features</h2>
+<p>To match imported songs and obtain features, Cue sends song identifiers (such as Apple Music IDs and ISRCs), song title, artist and duration to our service hosted on Cloudflare. Library-specific IDs may be included to associate a response with a requested song; the shared catalog uses recording and catalog identifiers rather than an Apple account ID.</p>
+<p>Our service may send recording identifiers or title-and-artist searches to a third-party music data provider. Builds without a configured backend may contact that provider directly. Audio files and your Apple Music credentials are not uploaded for this analysis.</p>
+<p>The shared database stores recording features, titles, artists, durations and identifier mappings so a song need not be looked up again for every user. These catalog records are not stored as a per-user playlist or listening-history profile, but requests to the service still involve transmitting your selected song information.</p>
+<h2>3. Personal song labels and feedback</h2>
+<p>Choosing a song label or saving a fine-tuned numeric score saves it locally and queues a submission to our service to help evaluate and improve automatic labels and scores. The submission contains a feedback reference, recording identifier when available, automatic scores, the changed dimension, app version, and either your chosen category or the exact score you saved. Opening the editor, dragging without saving or cancelling does not submit a score. Failed submissions can be retried automatically. This feedback is separate from optional usage sharing and is sent even when usage sharing is off. Scores saved locally in older builds are not automatically uploaded retroactively.</p>
+<p>Changing only a category updates filtering without moving the song&#39;s Energy/Attention Pull chart position; a saved fine-tuned score updates that position. Mood labels and scores affect chart color. Restoring a default or undoing an edit updates your local choice and queues a corresponding feedback update, but does not delete earlier server submissions. Server feedback is not a backup or cross-device synchronization of your preferences.</p>
+<p>When you choose Send in Report &amp; Feedback, we receive your message, category, feedback reference and app version. If you enable Include app diagnostics, the report also includes your operating system version and imported-song count. Diagnostics do not automatically include song titles or playlist names. Please avoid including passwords or sensitive personal information in your message. If you email us, we receive the email address and information you choose to send.</p>
+<h2>4. Optional usage sharing</h2>
+<p>If you enable Share usage data, we collect selected app actions (such as opens, imports, skips and feedback actions), counts, outcomes, operation durations, app version and timestamps. Events include randomly generated installation, session and event identifiers. The installation identifier lets us connect events from the same installation; it is not an Apple account ID, hardware ID or advertising ID.</p>
+<p>Usage events do not include song titles, playlist names or feedback text. Sharing is not required to use the app. You can change your choice in Settings at any time. Turning it off stops new usage-event collection, cancels pending sends, clears unsent local events and removes the local installation identifier. A request already received by the server may remain there; turning sharing off does not itself delete previously received events or stop song analysis and feedback requests.</p>
+<h2>5. Purposes and legal bases</h2>
+<p>We process necessary music information to provide the music-matching and playback features you request. We use your consent for optional usage analytics, and you may withdraw it without affecting earlier lawful processing. We rely on our legitimate interests in supporting users, improving song classifications and protecting the service for feedback review and necessary operational diagnostics, subject to your applicable rights. We do not use these data for advertising or sell them.</p>
+<h2>6. Service providers, access and security</h2>
+<p>Apple provides MusicKit and Apple Music. Cloudflare hosts our backend, database and operational logs. A third-party music data provider supplies song matching and feature information. These services receive the information needed to perform their roles and network connection information, which may include IP addresses and request timing. Our server and infrastructure providers can therefore access relevant requests; the service is not end-to-end encrypted from its operator.</p>
+<p>Authorized people operating Cue can review server-side data for the purposes described here. App-to-backend requests use HTTPS and authenticated access, but no service can guarantee absolute security. Providers may process data outside your country, including outside the EEA, under their applicable data-protection and transfer arrangements. Apple also processes information under its own privacy terms.</p>
+<h2>7. Retention</h2>
+<p>Local data remain until removed in the app or by deleting the app; device backups are controlled through Apple settings. Unsent usage events expire after 14 days and the local queue is capped at 1,000 events. Our backend is configured to delete received usage events older than 90 days in a daily cleanup, so deletion may occur after the next cleanup run.</p>
+<p>Feedback and shared song-catalog records do not currently have an automatic expiry. We retain feedback while needed to investigate reports and improve Cue, and shared catalog records while needed to provide matching. We review the need for retained feedback as Cue develops and handle applicable deletion requests manually. Infrastructure logs and provider backups have separate provider-controlled retention; we do not promise they disappear immediately when you remove local data.</p>
+<h2>8. Your choices and rights</h2>
+<p>You can turn usage sharing off in Settings, revoke Apple Music access through your device’s Settings or System Settings, and delete the app to remove its local storage. Removing a playlist or changing a label does not automatically delete past server submissions or shared song metadata.</p>
+<p>For questions, access, correction, deletion, restriction, portability or objections where applicable, contact <a href="mailto:xinchunma226@gmail.com">xinchunma226@gmail.com</a>. Give the approximate submission date and any available feedback or installation reference so we can locate relevant records. Because Cue has no user account and does not automatically attach your name to submissions, we may be unable to identify a record without additional context. We will explain any limitation rather than claim we have deleted data we cannot identify. You may also complain to your local data-protection authority, including the Dutch Autoriteit Persoonsgegevens.</p>
+<p>Cue does not currently request HealthKit data or provide medical treatment. If the app&#39;s data practices change, we will update this notice and request a new choice where required.</p>
+</main></body>
+</html>
